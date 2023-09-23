@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Poppins&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Indie+Flower&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
+* {
+  margin: 0;
+}
+nav {
+  top: 10px;
+  position: absolute;
+  right: 50px;
+}
+nav a {
+  color: #d35100;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  padding: 5px 15px;
+}
+section {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+}
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-text h2 {
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  font-size: 60px;
+}
+.section-text h1 {
+  color: #d35100;
+  font-size: 90px;
+  font-family: "Orbitron", sans-serif;
+}
+.section-text p {
+  color: #d35100;
+  font-size: 40px;
+  font-family: "Orbitron", sans-serif;
+}
+.section-text a {
+  margin-left: 40px;
+}
+.about {
+  height: 100vh;
+  width: 100%;
+  /* background: rgb(211, 81, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(211, 81, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  ); */
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.about img {
+  height: fit-content;
+  width: 330px;
+  /* margin-top: 20px; */
+}
+.about img:hover {
+  transition: all  ease-in;
+  transform: scale(1.05);
+}
+.about p {
+  margin-top: 40px;
+  font-size: 40px;
+  font-family: "Indie Flower", cursive;
+  color: #000;
+  width: 1000px;
+  text-align: center;
+  font-weight: 900;
+}
+.about #svg1 {
+  color: #d35100;
+  margin-top: 610px;
+  margin-left: 690px;
+  transform: rotate(180deg);
+  position: absolute;
+}
+.about #svg2 {
+  color: #d35100;
+  margin-top: -50px;
+  margin-left: 690px;
+  position: absolute;
+}
+.section-text svg {
+  color: #d35100;
+  position: relative;
+  left: 270px;
+  top: 160px;
+  animation: pop 1s ease-in-out infinite alternate;
+}
+@keyframes pop {
+  from {
+    transform: translatey(0);
+  }
+  to {
+    transform: translatey(20px);
+  }
+}
+.project {
+  height: 100vh;
+  width: 100%;
+  /* background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(211, 81, 0, 1) 100%
+  ); */
+  /* background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%); */
+background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.project #svg1 {
+  color: #fff;
+  margin-top: 585px;
+  margin-left: 690px;
+  transform: rotate(180deg);
+  position: absolute;
+  
+}
+.project #svg2{
+  color: #fff;
+  margin-top: -30px;
+  margin-left: 690px;
+  position: absolute;
+}
+/* .arrow .svg1{
+  color: #d35100;
+  margin-bottom: 600px;
+  margin-left: 1400px;
+  rotate: 180deg;
+}
+.arrow .svg2{
+  color: #d35100;
+  margin-bottom: 0;
+  margin-left: 1500px;
+} */
+
+.project-details {
+  /* background: linear-gradient(
+    -180deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  ); */
+  background-color: #d0885a;
+  border-radius: 20px;
+  width: 80%;
+  height: 300px;
+  position: relative;
+  display: flex;
+  margin-top: 0;
+  /* justify-content: space-evenly; */
+  flex-wrap: wrap;
+}
+.project-details:hover {
+  transition: all  ease-in;
+  transform: scale(1.05);
+}
+
+.project-details img {
+  width: 40%;
+  height: 260px;
+  /* margin: 20px; */
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  box-shadow: 0px 0px 4px 4px #d35100;
+}
+.project-details img:hover {
+  transition: all  ease-in;
+  transform: scale(1.05);
+}
+.project-details h2 {
+  color: #fff;
+  font-size: 40px;
+  font-family: "Black Ops One", cursive;
+  margin-left: 50px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.project-details p {
+  color: #000;
+  font-size: 17px;
+  font-weight:bold;
+  font-family: "popins", cursive;
+  text-align: justify;
+  margin-left: 50px;
+  width: 600px;
+  margin-top: 10px;
+}
+.details button {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  border-color: #fff;
+  margin-left: 150px;
+  margin-top: 10px;
+  align-items: center;
+  font-family: "Black Ops One", cursive;
+}
+.details button:hover {
+  color: #d35100;
+  background-color: #fff;
+  border-color: #fff;
+}
+.contact{
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contact svg{
+  color: #d35100;
+}
+.contact #svg1 {
+  /* color: #000; */
+  margin-top: 250px;
+  margin-left: 1325px;
+  transform: rotate(180deg);
+  position: absolute;
+  
+}
+.contact #svg2{
+  /* color: #000; */
+  margin-top: 300px;
+  margin-left: 63px;
+  position: absolute;
+}
+.resume{
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.resume h2{
+  margin-top: 30px;
+  color: #fff;
+  font-family: 'Cairo', sans-serif;
+}
+.resume #svg1{
+  margin-top: 270px;
+  color: #fff;
+  animation: dow 2s ease-in-out infinite alternate ;
+}
+@keyframes dow {
+  from {
+    transform: translatey(0);
+  }
+  to {
+    transform: translatey(20px);
+  }  
+}
+.resume #svg1:hover{
+  color: #d35100;
+}
+.resume #svg2{
+  color: #fff;
+  position: absolute;
+  margin-left: 670px;
+  margin-top: 220px;
+}
+.resume #svg2:hover{
+  color: #d35100;
+}
